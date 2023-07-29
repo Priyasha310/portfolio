@@ -1,0 +1,70 @@
+#about{
+    @apply py-20 px-12;
+    color:#ababab;
+    // @apply color-[#ababab];
+}
+.row{
+    @apply flex justify-between flex-wrap;
+}
+
+.aboutCol1{
+    flex-basis: 35%;
+
+    img{
+        @apply w-full;
+        @apply border-4;
+    }
+}
+
+.aboutCol2{
+    flex-basis: 80%;
+    margin:auto;
+
+    h1{
+        @apply text-6xl font-bold mb-5;
+        color:white;
+    }
+}
+
+.tabTitles{
+    @apply flex;
+    @apply mt-5 mx-0 mb-8;
+}
+
+.tabLinks{
+    @apply mr-12;
+    @apply text-lg font-semibold cursor-pointer;
+    @apply relative;
+}
+
+.tabLinks::after{
+    content: '';
+    @apply w-0 h-1;
+    @apply bg-[#ff004f];
+    @apply absolute left-0 -bottom-2;
+    transition: 0.5s;
+}
+
+.tabLinks.active::after{
+    width: 50%;
+}
+
+.tabContents{
+    ul li{
+        @apply list-none;
+        @apply my-2 mx-0;
+    }
+
+    ul li span{
+        color: brown;
+        @apply text-sm;
+    }
+}
+
+.tabContents{
+    display: none;
+}
+
+.tabContents.activeTab{
+    @apply block;
+}

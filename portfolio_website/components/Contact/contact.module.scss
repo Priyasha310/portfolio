@@ -1,0 +1,89 @@
+#contact{
+    @apply py-20 px-12;
+    color:#ababab;
+    // @apply color-[#ababab];
+}
+.row{
+    @apply flex justify-between flex-wrap;
+}
+
+.contactForm{
+    flex-basis: 60%;
+}
+
+.contactDetails{
+    flex-basis: 35%;
+
+    h1{
+        @apply text-5xl font-bold mb-5;
+        color:white;
+    }
+}
+.contactDetails p{
+    @apply mt-7;
+
+    i{
+        color: red;
+        @apply mr-4 text-lg;
+    }
+}
+
+.btn{
+    @apply inline-block;
+    @apply w-4/5 h-8  bg-[#37267b];
+}
+
+.socialIcons {
+    @apply inline-block my-7;
+}
+.socialIcons a {
+    width: 42px;
+    height: 42px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.socialIcons a::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(0);
+	transition: 0.3s ease-in-out;
+}
+.socialIcons a:hover::before {
+    transform: scale(1);
+}
+.socialIcons a img {
+	width: 40%;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
+.socialIcons a:hover img {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+.contactForm form{
+    @apply w-full;
+
+    input, textarea{
+        @apply w-full border-0 outline-none;
+        @apply border-gray-800 p-3 my-4 mx-0;
+        @apply text-lg border-2 rounded-md;
+        color:#fff;
+        @apply bg-[#262626];
+
+    }
+
+    btn{
+        @apply py-4 px-14 mt-5 cursor-pointer;
+
+    }
+}

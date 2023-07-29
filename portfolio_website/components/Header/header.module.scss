@@ -1,0 +1,49 @@
+.container{
+    @apply w-full h-screen;
+    @apply py-2 px-14 ;
+    @apply bg-[url(../../images/background.png)] bg-cover bg-center;
+}
+
+
+.container nav{
+    @apply fixed bg-gray-600;width: 90%;
+    @apply flex align-middle justify-between flex-wrap;
+
+    ul li{
+        @apply inline-block list-none my-2 mx-4;
+    }
+
+    ul li a{
+        @apply text-lg;
+        @apply relative;
+    }
+
+    ul li a::after{
+        content: '';
+        @apply w-0 h-1;
+        @apply bg-[#ff004f];
+        @apply absolute left-0 -bottom-2 ;
+        transition: 0.5s;
+    }
+
+    ul li a:hover::after{
+        @apply w-full;
+    }
+
+    .logo{
+        @apply w-40;
+    }
+}
+
+.headerText{
+    margin-top: 40%;
+    @apply text-3xl;
+}
+
+.headerText h1{
+    @apply text-4xl mt-5;
+
+    span{
+        @apply text-5xl mt-3;
+    }
+}
