@@ -21,7 +21,7 @@ const About = () => {
             </div>
             <div className={styles.aboutCol2}>
                 <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  delectus minima nulla sit velit repellendus! Sint modi totam deleniti, tempora accusantium minus. Eveniet saepe ratione impedit voluptatem facilis reiciendis eum.</p>
+                <p>Passionate web developer with a focus on designing aesthetically appealing and user-friendly websites. I&apos;m skilled at using front-end technologies to bring ideas to life with functional and responsive designs through clean and efficient code.</p>
                 <div className={styles.tabTitles}>
                     <p className={`${styles.tabLinks} ${activeTab === 'skills' ? styles.active : ''}`} 
                     onClick={()=>openTab('skills')}

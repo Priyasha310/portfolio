@@ -37,12 +37,12 @@
 
 .menu{
     @apply sm:hidden py-3;
-    @apply  font-semibold;
+    @apply font-semibold text-white;
 }
 
 @media only screen and (max-width:600px){
+    
     .container nav ul{
-        // background-color: rgb(24, 24, 82);
         background: linear-gradient(-30deg, rgb(122, 126, 171) 0%, rgba(99, 84, 157, 1) 40%, rgba(88, 58, 173, 1) 100%);
         @apply fixed top-0 -right-52 w-52 h-screen;
         padding-top: 50px;
