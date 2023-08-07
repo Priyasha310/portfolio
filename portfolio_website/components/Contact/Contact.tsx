@@ -1,25 +1,19 @@
 'use client'
 import React from 'react'
 import styles from './contact.module.scss'
-import Link from 'next/link'
-import Image from 'next/image'
-import icon from '../../public/next.svg'
-import { Button } from 'react-bootstrap'
 
 const Contact = () => {
   return (
-    <div id={styles.contact}>
+    <div id='contact' className={styles.contact}>
       <div className={styles.row}>
         <div className={styles.contactDetails}>
           <h1 className={styles.subTitle}>Contact Me</h1>
-          <p>contact@gmail.com</p>
-          <p>465451321</p>
-          <div className={styles.socialIcons}>
-            <Link href=''> <Image src={icon} alt=''></Image> </Link>
-            <Link href=''> <Image src={icon} alt=''></Image> </Link>
-            <Link href=''> <Image src={icon} alt=''></Image> </Link>
-          </div>
-          <Link href='../../public/next.svg' className={styles.btn} download>Download Resume</Link>
+
+          <p>Let&apos;s build something incredible together! Reach out to me for software development opportunities and collaborations. Would be happy to connect with you!</p>
+          {/* <p className=' font-bold'>Email</p> */}
+          <p>priyashaparnavi31099@gmail.com</p>
+          
+          <a href={`/PRIYASHA_PARNAVI-resume.pdf`} download className={styles.btn} > Resume</a>
         </div>
         <div className={styles.contactForm}>
           <form>
@@ -27,7 +21,7 @@ const Contact = () => {
             <input type='email' name='Email' placeholder='youremail@xyz.com' required />
             <input type='subject' name='Subject' placeholder='Contact Subject' required />
             <textarea name='Message' placeholder='Your Message'  />
-            <button type='submit' className={styles.btn}>Submit</button>
+            <button type='submit' className={`${styles.btn} ${styles.submitBtn}`}>Submit</button>
           </form>
         </div>
       </div>
