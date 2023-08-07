@@ -1,0 +1,101 @@
+.contact{
+    @apply py-20 w-80_100 mx-auto;
+    color:#ababab;
+}
+.row{
+    @apply flex justify-around flex-wrap;
+}
+
+.contactForm{
+    flex-basis: 55%;
+}
+
+.contactDetails{
+    flex-basis: 40%;
+
+    h1{
+        @apply text-2xl md:text-3xl lg:text-4xl uppercase mb-5;
+        @apply text-heading-color;
+    }
+
+    p{
+        @apply text-sm md:text-base text-gray-700;
+        @apply mr-4 mb-5;
+        @apply leading-7;
+    }
+}
+
+ 
+
+.btn{
+    @apply  rounded;
+    @apply bg-btn-color text-light-text;
+    @apply py-2 px-6;
+    @apply hover:bg-[#46319e];
+}
+
+.contactForm form{
+
+    input::placeholder, textarea::placeholder{
+        @apply text-sm py-1;
+    }
+
+    input, textarea{
+        @apply w-full border-0 outline-none;
+        @apply border-gray-800 py-2 px-3 my-4;
+        @apply text-lg border-2 rounded-sm;
+        color:#fff;
+        @apply bg-[rgb(38,38,38)];
+
+    }
+
+    input:focus, textarea:focus{
+        @apply border-2 border-gray-400;
+    }
+
+}
+
+.submitBtn{
+    @apply w-full mx-auto rounded-2xl;
+}
+
+@media only screen and (max-width:600px){
+    
+    .contactDetails, .contactForm{
+        flex-basis: 100%;
+    }
+
+    .contactDetails{
+        @apply text-sm;
+    }
+
+    .contactDetails p{
+        @apply text-sm md:text-base;
+    }
+
+    .contactForm{
+        @apply mt-8;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:976px){
+    
+    .contact{
+        @apply py-16 w-90_100 mx-auto;
+    }
+    .contactDetails{
+        flex-basis: 30%;
+    }
+    
+    .contactForm{
+        flex-basis: 50%;
+    }
+
+    .contactForm form{
+
+        input, textarea{
+            @apply text-sm;
+        }
+    
+    }
+}

@@ -1,0 +1,61 @@
+#navbar{
+    @apply w-screen h-full; 
+}
+
+.container nav{
+    @apply fixed; z-index: 1;
+    background: linear-gradient(90deg, rgb(122, 126, 171) 0%, rgba(99, 84, 157, 1) 45%, rgba(88, 58, 173, 1) 100%);
+    @apply w-full flex align-middle justify-between flex-wrap px-4;
+
+
+    ul li{
+        @apply inline-block list-none mt-3 mx-4;
+    }
+
+    ul li a{
+        @apply text-base text-white;
+        @apply relative;
+    }
+
+    ul li a::after{
+        content: '';
+        @apply w-0 h-1;
+        @apply bg-light-text;
+        @apply absolute left-0 -bottom-2 ;
+        transition: 0.5s;
+    }
+
+    ul li a:hover::after{
+        @apply w-full;
+    }
+
+    .logo{
+        @apply w-40 md:w-60;
+        @apply py-3 text-lg md:text-xl  text-white;
+    } 
+}
+
+.menu{
+    @apply sm:hidden py-3;
+    @apply  font-semibold;
+}
+
+@media only screen and (max-width:600px){
+    .container nav ul{
+        // background-color: rgb(24, 24, 82);
+        background: linear-gradient(-30deg, rgb(122, 126, 171) 0%, rgba(99, 84, 157, 1) 40%, rgba(88, 58, 173, 1) 100%);
+        @apply fixed top-0 -right-52 w-52 h-screen;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right .5s;
+
+        li{
+            @apply block;
+            margin: 25px;
+        }
+
+        span{
+            @apply absolute top-1 right-5;
+        }
+    }
+}

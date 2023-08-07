@@ -1,0 +1,107 @@
+.about{
+    @apply py-20 w-80_100 mx-auto;
+    color:#ababab;
+}
+.row{
+    @apply flex justify-around flex-wrap;
+}
+
+.aboutCol1{
+    flex-basis: 35%;
+
+    img{
+        @apply flex justify-center items-center;
+        @apply rounded-md;
+    }
+}
+
+.aboutCol2{
+    flex-basis: 60%;
+
+    h1{
+        @apply xxs:mt-4 md:mt-0;
+        @apply text-2xl md:text-3xl lg:text-4xl uppercase mb-5;
+        @apply text-heading-color;
+    }
+
+    p{
+        @apply text-sm md:text-base;
+        @apply text-gray-700;
+        @apply leading-7;
+    }
+}
+
+.tabTitles{
+    @apply flex;
+    @apply mt-5 mx-0 mb-8;
+}
+
+.tabLinks{
+    @apply xxs:mr-6 md:mr-12;
+    @apply text-lg font-semibold cursor-pointer;
+    @apply relative;
+}
+
+.tabLinks::after{
+    content: '';
+    @apply w-0 h-1;
+    @apply bg-heading-color;
+    @apply absolute left-0 -bottom-2;
+    transition: 0.5s;
+}
+
+.tabLinks.active::after{
+    @apply w-1/2;
+}
+
+.tabContents{
+    ul li{
+        @apply list-none;
+        @apply my-2 mx-0;
+        @apply text-base text-gray-800 ;
+    }
+
+    ul li span{
+        @apply text-sm text-gray-600;
+    }
+}
+
+.tabContents{
+    @apply hidden;
+}
+
+.tabContents.activeTab{
+    @apply block;
+}
+
+@media only screen and (max-width:600px){
+    
+    .aboutCol1, .aboutCol2{
+        flex-basis: 100%;
+    }
+
+    .aboutCol1{
+    
+        img{
+            @apply w-1/2;
+            @apply mx-auto;
+            max-height:200px;
+        }
+    }
+}
+
+
+@media only screen and (min-width:600px) and (max-width:976px){
+    
+    .about{
+        @apply py-16 w-90_100 mx-auto;
+    }
+    .aboutCol1{
+        flex-basis: 35%;
+    }
+    
+    .aboutCol2{
+        flex-basis: 60%;
+    }
+
+}
