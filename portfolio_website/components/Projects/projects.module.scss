@@ -1,0 +1,70 @@
+.projects{
+    @apply py-20 w-80_100 mx-auto;
+    color:#ababab;   
+
+    
+    h1{
+        @apply xxs:mt-4 md:mt-0;
+        @apply text-2xl md:text-3xl lg:text-4xl uppercase mb-5;
+        @apply text-heading-color;
+    }
+}
+
+.projectsList{
+    @apply grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    @apply mt-12;
+}
+
+
+.project{
+    @apply rounded-lg;
+    @apply overflow-hidden;
+
+    img{
+        @apply w-full rounded-lg block;
+    }
+}
+
+.layer{
+    @apply py-8;
+
+    @apply w-full h-full rounded-lg;
+    background: linear-gradient(190deg, rgb(163, 167, 202) 0%, rgb(124, 113, 167) 60%, rgb(82, 70, 118) 100%);
+    // @apply absolute left-0 bottom-0 overflow-hidden;
+    @apply flex justify-center items-center flex-col;
+    @apply px-8;
+
+    h3{
+        @apply font-semibold mb-4 text-lg text-white;
+    }
+
+    p{
+        @apply text-sm text-light-text;
+    }
+
+}
+
+@media only screen and (max-width:600px){
+    
+    .projectsCol1, .projectsCol2{
+        flex-basis: 100%;
+    }
+}
+
+
+@media only screen and (min-width:600px) and (max-width:976px){
+    
+    .projects{
+        @apply py-16 w-90_100 mx-auto;
+    }
+    .projectsCol1{
+        flex-basis: 35%;
+    }
+    
+    .projectsCol2{
+        flex-basis: 60%;
+    }
+
+}
