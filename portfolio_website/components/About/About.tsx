@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import styles from './about.module.scss'
 import Image from 'next/image'
-import user from '../../images/Picture1.png'
+import user from '@/images/Picture1.png'
 
 const About = () => {
 

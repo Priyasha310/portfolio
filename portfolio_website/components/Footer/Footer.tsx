@@ -7,11 +7,6 @@ import git from '@/images/github.png'
 import mail from '@/images/mail.png'
 import up from '@/images/up.svg'
 
-import next from '@/images/next.png'
-import react from '@/images/react.png'
-import vercel from '@/images/vercel.png'
-import tailwind from '@/images/tailwind.png'
-
 const Footer = () => {
   return (
     <div id='footer'>

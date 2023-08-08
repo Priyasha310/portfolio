@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react'
 import styles from './header.module.scss'
 import Image from 'next/image'
-import logo from '../../images/pri2-nbg2.png'
+import logo from '@/images/pri.jpg'
 import Link from 'next/link'
 import Typed from 'typed.js'
 

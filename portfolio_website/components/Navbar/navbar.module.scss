@@ -8,7 +8,7 @@
     @apply w-full flex items-center justify-between flex-wrap px-4;
 
     ul li{
-        @apply inline-block list-none mt-3 mx-4;
+        @apply inline-block list-none mt-3 mb-2 mx-4;
     }
 
     ul li a{
@@ -20,7 +20,7 @@
         content: '';
         @apply w-0 h-1;
         @apply bg-light-text;
-        @apply absolute left-0 -bottom-2 ;
+        @apply absolute left-0 -bottom-1;
         transition: 0.5s;
     }
 
