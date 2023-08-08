@@ -5,8 +5,7 @@
 .container nav{
     @apply fixed; z-index: 1;
     background: linear-gradient(90deg, rgb(122, 126, 171) 0%, rgba(99, 84, 157, 1) 45%, rgba(88, 58, 173, 1) 100%);
-    @apply w-full flex align-middle justify-between flex-wrap px-4;
-
+    @apply w-full flex items-center justify-between flex-wrap px-4;
 
     ul li{
         @apply inline-block list-none mt-3 mx-4;

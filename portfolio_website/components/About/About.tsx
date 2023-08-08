@@ -36,16 +36,16 @@ const About = () => {
                 <div className={` ${styles.tabContents} ${activeTab === 'skills' ? styles.activeTab : ''} `} id='skills'>
                     <div className="w-3/4 md:w-1/2 flex justify-between">
                         <ul>
-                            <li><span>HTML</span> </li>
-                            <li><span>CSS</span> </li>
-                            <li><span>Nextjs</span> </li>
-                            <li><span>Reactjs</span> </li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Nextjs</li>
+                            <li>Reactjs</li>
                         </ul>
                         <ul>
-                            <li><span>Nodejs</span> </li>
-                            <li><span>Nestjs</span> </li>
-                            <li><span>Tailwind CSS</span> </li>
-                            <li><span>Bootstrap</span> </li>
+                            <li>Nodejs</li>
+                            <li>Nestjs</li>
+                            <li>Tailwind CSS</li>
+                            <li>Bootstrap</li>
                         </ul>
                     </div>
                 </div>
@@ -58,9 +58,9 @@ const About = () => {
                 </div>
                 <div className={` ${styles.tabContents} ${activeTab === 'education' ? styles.activeTab : ''}`} id='education'>
                     <ul>
-                        <li><span>B.E. in Information Science and Engineering</span> <br/> CGPA = 8.47</li>
-                        <li><span>Intermediate 	</span> <br/> Aggregate = 85% </li>
-                        <li><span>Matriculation </span> <br/> CGPA = 9.8</li>
+                        <li><span>B.E. in Information Science and Engineering [2019-2023]</span> <br/> CGPA = 8.47</li>
+                        <li><span>Intermediate [2018]</span> <br/> Aggregate = 85% </li>
+                        <li><span>Matriculation [2016]</span> <br/> CGPA = 9.8</li>
                     </ul>
                 </div>
             </div>

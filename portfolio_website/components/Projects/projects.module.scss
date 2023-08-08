@@ -19,52 +19,63 @@
 
 
 .project{
-    @apply rounded-lg;
+    @apply rounded-lg relative mr-4 xl:mr-8;
     @apply overflow-hidden;
 
     img{
         @apply w-full rounded-lg block;
+        transition: transform(.5s);
     }
 }
 
 .layer{
-    @apply py-8;
-
-    @apply w-full h-full rounded-lg;
-    background: linear-gradient(190deg, rgb(163, 167, 202) 0%, rgb(124, 113, 167) 60%, rgb(82, 70, 118) 100%);
+    background: linear-gradient(rgba(0,0,0, 0.6), #6f42c1);
     // @apply absolute left-0 bottom-0 overflow-hidden;
-    @apply flex justify-center items-center flex-col;
+    @apply w-full py-20;
     @apply px-8;
+    @apply w-full h-full rounded-lg;
+    @apply flex justify-center items-center flex-col;
+    @apply px-8 text-center;
+    transition: height 0.5s;
 
     h3{
-        @apply font-semibold mb-4 text-lg text-white;
+        @apply font-semibold mb-4 text-lg text-light-text;
     }
 
     p{
         @apply text-sm text-light-text;
     }
 
-}
-
-@media only screen and (max-width:600px){
-    
-    .projectsCol1, .projectsCol2{
-        flex-basis: 100%;
+    a{
+        @apply bg-white rounded-full p-2 mt-4;
+        @apply hover:bg-slate-100;
     }
+
 }
 
+.project:hover img{
+    transform: scale(1.1);
+}
+.project:hover .layer{
+    @apply h-full;
+}
+
+
+
+.openNew::after {
+    content: "";
+    @apply w-6 h-6;
+    @apply inline-block;
+    margin: 0 0.05em 0 0.1em;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNOSAyTDkgMyAxMi4zIDMgNiA5LjMgNi43IDEwIDEzIDMuNyAxMyA3IDE0IDcgMTQgMlpNNCA0QzIuOSA0IDIgNC45IDIgNkwyIDEyQzIgMTMuMSAyLjkgMTQgNCAxNEwxMCAxNEMxMS4xIDE0IDEyIDEzLjEgMTIgMTJMMTIgNyAxMSA4IDExIDEyQzExIDEyLjYgMTAuNiAxMyAxMCAxM0w0IDEzQzMuNCAxMyAzIDEyLjYgMyAxMkwzIDZDMyA1LjQgMy40IDUgNCA1TDggNSA5IDRaIi8+PC9zdmc+) no-repeat;
+    background-size: contain;
+    vertical-align: text-bottom;
+  }
 
 @media only screen and (min-width:600px) and (max-width:976px){
     
     .projects{
         @apply py-16 w-90_100 mx-auto;
     }
-    .projectsCol1{
-        flex-basis: 35%;
-    }
-    
-    .projectsCol2{
-        flex-basis: 60%;
-    }
-
 }
+
