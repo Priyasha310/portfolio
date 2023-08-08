@@ -5,19 +5,16 @@
 
 .socialIcons {
     @apply inline-block;
-    @apply flex justify-center;
-    align-items: center;
+    @apply flex justify-center items-center;
 }
 
 .footerContainer p{
-    @apply flex justify-center mt-2;
-    align-items: center;
+    @apply flex justify-center items-center mt-2;
     @apply text-xs text-[#c6c4c8];
 }
 .socialIcons a {
     width: 30px;
     height: 30px;
-    // @apply bg-light-text;
     background-color: rgb(185, 172, 188);
     display: inline-flex;
     border-radius: 50%;
@@ -25,7 +22,6 @@
     align-items: center;
     justify-content: center;
     line-height: 1;
-    // border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .socialIcons a::before {
     content: "";
@@ -56,5 +52,19 @@
         width: 25px;
         height: 25px;
         @apply mr-2;
+    }
+}
+
+
+.techsList{
+    @apply inline-block;
+    // @apply grid;
+    // grid-template-columns: repeat(10, minmax(50px, 1fr));
+    // grid-gap: 40px;
+    // @apply mt-12;
+
+    img{
+        @apply inline-flex gap-4 mr-4;
+        @apply w-7 h-7 rounded-full;
     }
 }
