@@ -16,8 +16,8 @@ const UsedTech = () => {
             <div className={styles.techsList}>
                 <Image src={react} alt=''/>
                 <Image src={next} alt=''/>
-                <Image src={vercel} alt=''/>
                 <Image src={tailwind} alt=''/>
+                <Image src={vercel} alt=''/>
             </div>
         </div>
     </div>

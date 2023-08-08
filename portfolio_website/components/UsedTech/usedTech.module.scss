@@ -22,7 +22,8 @@
 
     img{
         @apply inline-flex gap-2 mr-1 md:mr-3;
-        @apply w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full;
+        @apply w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14;
+        @apply rounded-full;
     }
 }
 
