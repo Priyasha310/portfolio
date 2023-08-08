@@ -11,7 +11,7 @@ const Contact = () => {
 
           <p>Let&apos;s build something incredible together! Reach out to me for software development opportunities and collaborations. Would be happy to connect with you!</p>
           {/* <p className=' font-bold'>Email</p> */}
-          <p>priyashaparnavi31099@gmail.com</p>
+          <p>1rn19is109.priyashaparnavi@gmail.com</p>
           
           <a href={`/PRIYASHA_PARNAVI-resume.pdf`} download className={styles.btn} > Resume</a>
         </div>
