@@ -1,5 +1,6 @@
 .about{
     @apply py-20 w-80_100 mx-auto;
+    @apply sm:py-16 w-90_100 mx-auto;
     color:#ababab;
 }
 .row{
@@ -7,16 +8,18 @@
 }
 
 .aboutCol1{
-    @apply basis-35_100;
+    @apply basis-full sm:basis-35_100 lg:basis-30_100;
 
     img{
-        @apply flex justify-center items-center;
+        @apply sm:flex justify-center items-center;
         @apply rounded-md;
+        @apply w-1/2 mx-auto max-h-52;
+        @apply sm:w-full;
     }
 }
 
 .aboutCol2{
-    @apply basis-60_100;
+    @apply basis-full sm:basis-60_100 lg:basis-65_100;
 
     h1{
         @apply mt-4 md:mt-0;
@@ -57,11 +60,11 @@
     ul li{
         @apply list-none;
         @apply my-2 mx-0;
-        @apply text-xs sm:text-sm lg:text-base text-gray-800 ;
+        @apply text-xs md:text-sm text-gray-600;
     }
 
     ul li span{
-        @apply text-sm text-gray-600;
+        @apply text-sm lg:text-base text-gray-800 bg-red-200 leading-7;
     }
 }
 
@@ -73,34 +76,3 @@
     @apply block;
 }
 
-@media only screen and (max-width:600px){
-    
-    .aboutCol1, .aboutCol2{
-        @apply basis-full;
-    }
-
-    .aboutCol1{
-    
-        img{
-            @apply w-1/2;
-            @apply mx-auto;
-            max-height:200px;
-        }
-    }
-}
-
-
-@media only screen and (min-width:600px) and (max-width:976px){
-    
-    .about{
-        @apply py-16 w-90_100 mx-auto;
-    }
-    .aboutCol1{
-        @apply basis-35_100;
-    }
-    
-    .aboutCol2{
-        @apply basis-60_100;
-    }
-
-}

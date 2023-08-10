@@ -16,8 +16,8 @@
     @apply flex justify-center  items-center;
 
     img{
-        @apply mt-2;
-        @apply w-72 h-72 p-1;
+        @apply mt-2 p-1;
+        @apply w-72 h-72;
         @apply rounded-full bg-white;
     }
 }
@@ -72,7 +72,7 @@
         
         img{
             @apply block;
-            @apply w-48 h-48 p-1;
+            @apply w-48 h-48;
             @apply my-2;
             @apply rounded-full bg-white;
         }
@@ -95,7 +95,7 @@
         @apply flex justify-end items-center;
         
         img{
-            @apply w-60 h-60 p-1;
+            @apply w-60 h-60;
             @apply my-2;
             @apply rounded-full bg-white;
         }

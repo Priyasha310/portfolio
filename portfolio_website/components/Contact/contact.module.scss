@@ -1,17 +1,19 @@
 .contact{
     @apply py-20 w-80_100 mx-auto;
+    @apply sm:py-16 w-90_100 mx-auto;
     color:#ababab;
 }
 .row{
-    @apply xxs:flex justify-around flex-wrap;
+    @apply flex justify-around flex-wrap;
 }
 
 .contactForm{
-    @apply basis-55_100;
+    @apply basis-full sm:basis-45_100 lg:basis-55_100;
+    @apply mt-8;
 }
 
 .contactDetails{
-    @apply basis-40_100;
+    @apply basis-full sm:basis-30_100 lg:basis-40_100;
 
     h1{
         @apply text-2xl md:text-3xl lg:text-4xl uppercase mb-5;
@@ -43,7 +45,7 @@
     input, textarea{
         @apply w-full border-0 outline-none;
         @apply border-gray-800 py-2 px-3 my-4;
-        @apply text-lg border-2 rounded-sm;
+        @apply text-lg sm:text-sm md:text-lg border-2 rounded-sm;
         color:#fff;
         @apply bg-[rgb(38,38,38)];
 
@@ -61,37 +63,4 @@
 
 .message{
     @apply text-xs mt-2 text-gray-700;
-}
-
-@media only screen and (max-width:600px){
-    
-    .contactDetails, .contactForm{
-        @apply basis-full;
-    }
-
-    .contactForm{
-        @apply mt-8;
-    }
-}
-
-@media only screen and (min-width:600px) and (max-width:976px){
-    
-    .contact{
-        @apply py-16 w-90_100 mx-auto;
-    }
-    .contactDetails{
-        @apply basis-30_100;
-    }
-    
-    .contactForm{
-        @apply basis-50_100;
-    }
-
-    .contactForm form{
-
-        input, textarea{
-            @apply text-sm;
-        }
-    
-    }
 }

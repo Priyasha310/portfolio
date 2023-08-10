@@ -46,7 +46,7 @@ const Contact = () => {
           <h1>Contact Me</h1>
 
           <p>Let&apos;s build something incredible together! Reach out to me for software development opportunities and collaborations. Would be happy to connect with you!</p>
-          <p className='w-full overflow-hidden overflow-ellipsis hover:overflow-visible whitespace-pre-wrap'>1rn19is109.priyashaparnavi@gmail.com</p>
+          <p className='w-95_100 overflow-hidden overflow-ellipsis hover:overflow-visible whitespace-pre-wrap'>1rn19is109.priyashaparnavi@gmail.com</p>
           
           <a href={`/PRIYASHA_PARNAVI-resume.pdf`} download className={styles.btn} > Resume</a>
         </div>

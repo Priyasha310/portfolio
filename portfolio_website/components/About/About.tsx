@@ -64,9 +64,9 @@ const About = () => {
                 </div>
                 <div className={` ${styles.tabContents} ${activeTab === 'education' ? styles.activeTab : ''}`} id='education'>
                     <ul>
-                        <li><span>B.E. in Information Science and Engineering [2019-2023]</span> <br/> CGPA = 8.47</li>
-                        <li><span>Intermediate [2018]</span> <br/> Aggregate = 85% </li>
-                        <li><span>Matriculation [2016]</span> <br/> CGPA = 9.8</li>
+                        <li>B.E. in Information Science and Engineering [2019-2023] <br/><span> CGPA = 8.47 </span></li>
+                        <li>Intermediate [2018] <br/><span> Aggregate = 85% </span> </li>
+                        <li>Matriculation [2016] <br/><span> CGPA = 9.8 </span></li>
                     </ul>
                 </div>
             </div>
