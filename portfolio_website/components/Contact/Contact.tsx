@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import styles from './contact.module.scss'
 
 const Contact = () => {
@@ -9,7 +9,6 @@ const Contact = () => {
       e.preventDefault();
       
       const form = e.currentTarget;
-      const formData = new FormData(form);
       const msg = document.getElementById('message');
   
       try {
