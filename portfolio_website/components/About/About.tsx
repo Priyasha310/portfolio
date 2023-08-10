@@ -34,18 +34,24 @@ const About = () => {
                     >Education</p>
                 </div>
                 <div className={` ${styles.tabContents} ${activeTab === 'skills' ? styles.activeTab : ''} `} id='skills'>
-                    <div className="w-3/4 md:w-1/2 flex justify-between">
+                    <div className="w-full md:w-3/4 flex justify-between">
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Javascript</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <ul>
                             <li>Nextjs</li>
+                            <li>Tailwind CSS</li>
                             <li>Reactjs</li>
+                            <li>Figma</li>
                         </ul>
                         <ul>
                             <li>Nodejs</li>
                             <li>Nestjs</li>
-                            <li>Tailwind CSS</li>
-                            <li>Bootstrap</li>
+                            <li>Expressjs</li>
+                            <li>MongoDB</li>
                         </ul>
                     </div>
                 </div>

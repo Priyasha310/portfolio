@@ -59,7 +59,7 @@
     }
 
     .headerText, .imgContainer, .smImg{
-        flex-basis: 100%;
+        @apply basis-full;
     }
 
     .imgContainer{
