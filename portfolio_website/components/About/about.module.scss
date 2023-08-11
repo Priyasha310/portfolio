@@ -39,7 +39,7 @@
 }
 
 .tabLinks{
-    @apply mr-6 md:mr-12;
+    @apply mr-8 md:mr-12;
     @apply text-lg font-semibold cursor-pointer;
     @apply relative;
 }
@@ -64,7 +64,7 @@
     }
 
     ul li span{
-        @apply text-sm lg:text-base text-gray-800 bg-red-200 leading-7;
+        @apply text-sm lg:text-base text-gray-800 leading-7;
     }
 }
 
