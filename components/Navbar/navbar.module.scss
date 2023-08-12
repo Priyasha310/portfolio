@@ -35,6 +35,7 @@
 }
 
 .menu{
+    @apply cursor-pointer;
     @apply sm:hidden py-3;
     @apply font-semibold text-white;
 }
