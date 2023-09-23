@@ -8,13 +8,14 @@
 }
 
 .aboutCol1{
-    @apply basis-full sm:basis-35_100 lg:basis-30_100;
+    @apply basis-full sm:basis-35_100 lg:basis-35_100;
 
     img{
         @apply sm:flex justify-center items-center;
         @apply rounded-md;
-        @apply w-1/2 mx-auto max-h-52;
-        @apply sm:w-full;
+        @apply w-1/2 mx-auto h-56;
+        @apply sm:w-full xl:w-3/4;
+        @apply sm:h-3/4 xl:h-full;
     }
 }
 
