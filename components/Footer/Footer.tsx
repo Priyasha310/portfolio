@@ -13,7 +13,7 @@ const Footer = () => {
         <div className={styles.footerContainer}>
             
             <div className={styles.socialIcons}>
-                <Link href='mailto:priyashaparnavi31099@gmail.com' target='_blank'> <Image src={mail} alt='' ></Image> </Link>
+                <Link href='mailto:1rn19is109.priyashaparnavi@gmail.com' target='_blank'> <Image src={mail} alt='' ></Image> </Link>
                 <Link href='https://www.linkedin.com/in/priyasha-parnavi-915b691b4/' target='_blank'> <Image src={linkedin} alt=''></Image> </Link>
                 <Link href='https://github.com/Priyasha310' target='_blank'> <Image src={git} alt=''></Image> </Link>
                 <Link className='absolute right-6' href='#home'> <Image className='h-60_100' src={up} alt=''></Image> </Link>
