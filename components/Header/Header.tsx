@@ -41,7 +41,7 @@ const Navbar = () => {
             </h1>
             <p>I&apos;m an enthusiastic and passionate web developer and very inquisitive person. Ready to learn new technologies.</p><br/>
             <a href={`/PRIYASHA_PARNAVI-resume.pdf`} download className={`${styles.btn}`} > Resume</a>
-            <Link href='mailto:priyashaparnavi31099@gmail.com' target='_blank' className={`${styles.btn}`}> Mail me </Link>
+            <Link href='mailto:1rn19is109priyashaparnavi@gmail.com' target='_blank' className={`${styles.btn}`}> Mail me </Link>
           </div>
 
           <div className={styles.imgContainer}>
