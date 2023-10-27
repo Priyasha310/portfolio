@@ -11,11 +11,13 @@
     @apply basis-full sm:basis-35_100 lg:basis-35_100;
 
     img{
-        @apply sm:flex justify-center items-center;
+        @apply sm:flex justify-center sm:items-center;
         @apply rounded-md;
-        @apply w-1/2 mx-auto h-56;
-        @apply sm:w-full xl:w-3/4;
-        @apply sm:h-3/4 xl:h-full;
+        @apply w-1/2 mx-auto h-auto;
+        @apply sm:w-full lg:w-3/4;
+        @apply lg:h-3/4;
+        @apply opacity-80;
+        @apply sm:mt-24 lg:mt-5;
     }
 }
 
