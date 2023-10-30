@@ -8,7 +8,7 @@
 }
 
 .aboutCol1{
-    @apply basis-full sm:basis-35_100 lg:basis-35_100;
+    @apply basis-full sm:basis-35_100 lg:basis-35_100 h-full;
 
     img{
         @apply sm:flex justify-center sm:items-center;

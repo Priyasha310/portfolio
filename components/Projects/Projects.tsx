@@ -42,8 +42,8 @@ const Projects = () => {
                    className={styles.carousel}
                    removeArrowOnDeviceType={["mobile"]}
                 >
-                    <ProjectCard heading='Heading of Project1' description='Description of project1: Lorem ipsum dolor sit amet consectetur adipisicing elit.' path='' />
-                    <ProjectCard heading='Heading of Project2' description='Description of project2: Lorem ipsum dolor sit amet consectetur adipisicing elit.' path='' />
+                    <ProjectCard heading='Stack Overflow Clone' description='Clone of stack overflow where user can ask/answer question publicly.' path='https://github.com/Priyasha310/stack-overflow-clone' />
+                    <ProjectCard heading='Chat Application' description='Allows user to chat. Have to implement socket.io for real-time experience.' path='https://github.com/Priyasha310/Whispp-chat-App' />
                     <ProjectCard heading='Heading of Project3' description='Description of project3: Lorem ipsum dolor sit amet consectetur adipisicing elit.' path='' />
                     <ProjectCard heading='Heading of Project4' description='Description of project4: Lorem ipsum dolor sit amet consectetur adipisicing elit.' path='' />
                 </Carousel>
