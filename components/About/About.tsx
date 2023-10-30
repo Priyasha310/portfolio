@@ -26,9 +26,9 @@ const About = () => {
                     <p className={`${styles.tabLinks} ${activeTab === 'skills' ? styles.active : ''}`} 
                     onClick={()=>openTab('skills')}
                     >Skills</p>
-                    <p className={`${styles.tabLinks} ${activeTab === 'experience' ? styles.active : ''}`}  
+                    {/* <p className={`${styles.tabLinks} ${activeTab === 'experience' ? styles.active : ''}`}  
                     onClick={()=> openTab('experience')}
-                    >Experience</p>
+                    >Experience</p> */}
                     <p className={`${styles.tabLinks} ${activeTab === 'education' ? styles.active : ''}`} 
                     onClick={()=> openTab('education')}
                     >Education</p>
@@ -57,7 +57,7 @@ const About = () => {
                 </div>
                 <div className={` ${styles.tabContents} ${activeTab === 'experience' ? styles.activeTab : ''}`} id='experience'>
                     <ul>
-                        <li><span>Associate Software Engineer [3 months]</span> <br/> Hashedin by Deloitte</li>
+                        <li><p className=''>Associate Software Engineer <span>[March 2023 - June 2023]</span></p> HashedIn by Deloitte</li>
                     </ul>
                 </div>
                 <div className={` ${styles.tabContents} ${activeTab === 'education' ? styles.activeTab : ''}`} id='education'>
