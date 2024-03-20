@@ -37,7 +37,7 @@ body {
 @font-face {
   font-family: "Poppins Semibold";
   font-style: normal;
-  @apply font-semibold;
+  font-weight: 600;
   src: url("../assets/fonts/Poppins-SemiBold.ttf");
 }
 
