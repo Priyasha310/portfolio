@@ -1,61 +1,65 @@
-.footerContainer{
-    background: linear-gradient(90deg, rgb(122, 126, 171) 0%, rgba(99, 84, 157, 1) 30%, rgba(88, 58, 173, 1) 100%);
-    @apply py-4;
+.footerContainer {
+  background: linear-gradient(
+    90deg,
+    rgb(122, 126, 171) 0%,
+    rgba(99, 84, 157, 1) 30%,
+    rgba(88, 58, 173, 1) 100%
+  );
+  @apply py-4;
 }
 
 .socialIcons {
-    @apply inline-block;
-    @apply flex justify-center items-center;
+  @apply inline-block;
+  @apply flex justify-center items-center;
 }
 
-.footerContainer p{
-    @apply flex justify-center items-center mt-2;
-    @apply text-xs text-[#c6c4c8];
+.footerContainer p {
+  @apply flex justify-center items-center mt-2;
+  @apply text-xs text-[#c6c4c8];
 }
 .socialIcons a {
-    width: 30px;
-    height: 30px;
-    background-color: rgb(185, 172, 188);
-    display: inline-flex;
-    border-radius: 50%;
-    margin-right: 24px;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(185, 172, 188);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 24px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 .socialIcons a::before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 50%;
-    transform: scale(0);
-	transition: 0.3s ease-in-out;
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
 }
 .socialIcons a:hover::before {
-    transform: scale(1);
+  transform: scale(1);
 }
 .socialIcons a img {
-	width: 90%;
-	transition: 0.3s ease-in-out;
+  width: 90%;
+  transition: 0.3s ease-in-out;
 }
 .socialIcons a:hover img {
-	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+    hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
+@media only screen and (max-width: 600px) {
+  .socialIcons a {
+    width: 25px;
+    height: 25px;
+    @apply mr-2;
+  }
 
-@media only screen and (max-width:600px){
-    
-    .socialIcons a {
-        width: 25px;
-        height: 25px;
-        @apply mr-2;
-    }
-
-    .socialIcons a::before {
-        content: "";
-        width: 25px;
-        height: 25px;
-    }
+  .socialIcons a::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+  }
 }
