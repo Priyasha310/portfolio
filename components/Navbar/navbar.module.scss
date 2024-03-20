@@ -1,61 +1,71 @@
-#navbar{
-    @apply w-screen h-full; 
+#navbar {
+  @apply w-screen h-full;
 }
 
-.container nav{
-    @apply fixed; z-index: 1;
-    background: linear-gradient(90deg, rgb(122, 126, 171) 0%, rgba(99, 84, 157, 1) 45%, rgba(88, 58, 173, 1) 100%);
-    @apply w-full flex items-center justify-between flex-wrap px-4;
+.container nav {
+  @apply fixed;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgb(122, 126, 171) 0%,
+    rgba(99, 84, 157, 1) 45%,
+    rgba(88, 58, 173, 1) 100%
+  );
+  @apply w-full flex items-center justify-between flex-wrap px-4;
 
-    ul li{
-        @apply inline-block list-none mt-3 mb-2 mx-4;
-    }
+  ul li {
+    @apply inline-block list-none mt-3 mb-2 mx-4;
+  }
 
-    ul li a{
-        @apply text-base text-white;
-        @apply relative;
-    }
+  ul li a {
+    @apply text-base text-white;
+    @apply relative;
+  }
 
-    ul li a::after{
-        content: '';
-        @apply w-0 h-1;
-        @apply bg-light-text;
-        @apply absolute left-0 -bottom-1;
-        transition: 0.5s;
-    }
+  ul li a::after {
+    content: "";
+    @apply w-0 h-1;
+    @apply bg-light-text;
+    @apply absolute left-0 -bottom-1;
+    transition: 0.5s;
+  }
 
-    ul li a:hover::after{
-        @apply w-full;
-    }
+  ul li a:hover::after {
+    @apply w-full;
+  }
 
-    .logo{
-        @apply w-40 md:w-60;
-        @apply py-3 text-lg md:text-xl  text-white;
-    } 
+  .logo {
+    @apply w-40 md:w-60;
+    @apply py-3 text-lg md:text-xl  text-white;
+  }
 }
 
-.menu{
-    @apply cursor-pointer;
-    @apply sm:hidden py-3;
-    @apply font-semibold text-white;
+.menu {
+  @apply cursor-pointer;
+  @apply sm:hidden py-3;
+  @apply font-semibold text-white;
 }
 
-@media only screen and (max-width:600px){
-    
-    .container nav ul{
-        background: linear-gradient(-30deg, rgb(122, 126, 171) 0%, rgba(99, 84, 157, 1) 40%, rgba(88, 58, 173, 1) 100%);
-        @apply fixed top-0 -right-52 w-52 h-screen;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right .5s;
+@media only screen and (max-width: 600px) {
+  .container nav ul {
+    background: linear-gradient(
+      -30deg,
+      rgb(122, 126, 171) 0%,
+      rgba(99, 84, 157, 1) 40%,
+      rgba(88, 58, 173, 1) 100%
+    );
+    @apply fixed top-0 -right-52 w-52 h-screen;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
 
-        li{
-            @apply block;
-            margin: 25px;
-        }
-
-        span{
-            @apply absolute top-1 right-5;
-        }
+    li {
+      @apply block;
+      margin: 25px;
     }
+
+    span {
+      @apply absolute top-1 right-5;
+    }
+  }
 }

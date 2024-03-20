@@ -1,83 +1,77 @@
-.projects{
-    @apply py-20 w-80_100 mx-auto;
-    color:#ababab;   
+.projects {
+  @apply py-20 w-80_100 mx-auto;
+  color: #ababab;
 
-    
-    h1{
-        @apply xxs:mt-4 md:mt-0;
-        @apply text-2xl md:text-3xl lg:text-4xl uppercase mb-5;
-        @apply text-heading-color;
-    }
+  h1 {
+    @apply xxs:mt-4 md:mt-0;
+    @apply text-2xl md:text-3xl lg:text-4xl uppercase mb-5;
+    @apply text-heading-color;
+  }
 }
 
-.projectsList{
-    @apply grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    @apply mt-12;
+.projectsList {
+  @apply grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  @apply mt-12;
 }
 
+.project {
+  @apply rounded-lg relative mr-4 xl:mr-8;
+  @apply overflow-hidden;
 
-.project{
-    @apply rounded-lg relative mr-4 xl:mr-8;
-    @apply overflow-hidden;
-
-    img{
-        @apply w-full rounded-lg block;
-        transition: transform(.5s);
-    }
+  img {
+    @apply w-full rounded-lg block;
+    transition: transform(0.5s);
+  }
 }
 
-.layer{
-    background: linear-gradient(rgba(215, 206, 233, 0.7), #6f42c1);
-    // @apply absolute left-0 bottom-0 overflow-hidden;
-    @apply w-full py-20;
-    @apply px-8;
-    @apply w-full h-full rounded-lg;
-    @apply flex justify-center items-center flex-col;
-    @apply px-8 text-center;
-    transition: height 0.5s;
+.layer {
+  background: linear-gradient(rgba(215, 206, 233, 0.7), #6f42c1);
+  // @apply absolute left-0 bottom-0 overflow-hidden;
+  @apply w-full py-20;
+  @apply px-8;
+  @apply w-full h-full rounded-lg;
+  @apply flex justify-center items-center flex-col;
+  @apply px-8 text-center;
+  transition: height 0.5s;
 
-    h3{
-        @apply font-semibold mb-4 text-lg text-violet-700;
-    }
-
-    p{
-        @apply text-sm text-white;
-        @apply overflow-hidden line-clamp-2 whitespace-pre-line text-ellipsis;
-        @apply hover:overflow-visible cursor-pointer;
-    }
-
-    a{
-        @apply bg-white rounded-full p-2 mt-4;
-        @apply hover:bg-slate-100;
-    }
-
-}
-
-.project:hover img{
-    transform: scale(1.1);
-}
-.project:hover .layer{
-    @apply h-full;
-}
-
-
-
-.openNew::after {
-    content: "";
-    @apply w-6 h-6;
-    @apply inline-block;
-    margin: 0 0.05em 0 0.1em;
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNOSAyTDkgMyAxMi4zIDMgNiA5LjMgNi43IDEwIDEzIDMuNyAxMyA3IDE0IDcgMTQgMlpNNCA0QzIuOSA0IDIgNC45IDIgNkwyIDEyQzIgMTMuMSAyLjkgMTQgNCAxNEwxMCAxNEMxMS4xIDE0IDEyIDEzLjEgMTIgMTJMMTIgNyAxMSA4IDExIDEyQzExIDEyLjYgMTAuNiAxMyAxMCAxM0w0IDEzQzMuNCAxMyAzIDEyLjYgMyAxMkwzIDZDMyA1LjQgMy40IDUgNCA1TDggNSA5IDRaIi8+PC9zdmc+) no-repeat;
-    background-size: contain;
-    vertical-align: text-bottom;
+  h3 {
+    @apply font-semibold mb-4 text-lg text-violet-700;
   }
 
-@media only screen and (min-width:600px) and (max-width:976px){
-    
-    .projects{
-        @apply py-16 w-90_100 mx-auto;
-    }
+  p {
+    @apply text-sm text-white;
+    @apply overflow-hidden line-clamp-2 whitespace-pre-line text-ellipsis;
+    @apply hover:overflow-visible cursor-pointer;
+  }
+
+  a {
+    @apply bg-white rounded-full p-2 mt-4;
+    @apply hover:bg-slate-100;
+  }
 }
 
+.project:hover img {
+  transform: scale(1.1);
+}
+.project:hover .layer {
+  @apply h-full;
+}
+
+.openNew::after {
+  content: "";
+  @apply w-6 h-6;
+  @apply inline-block;
+  margin: 0 0.05em 0 0.1em;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNOSAyTDkgMyAxMi4zIDMgNiA5LjMgNi43IDEwIDEzIDMuNyAxMyA3IDE0IDcgMTQgMlpNNCA0QzIuOSA0IDIgNC45IDIgNkwyIDEyQzIgMTMuMSAyLjkgMTQgNCAxNEwxMCAxNEMxMS4xIDE0IDEyIDEzLjEgMTIgMTJMMTIgNyAxMSA4IDExIDEyQzExIDEyLjYgMTAuNiAxMyAxMCAxM0w0IDEzQzMuNCAxMyAzIDEyLjYgMyAxMkwzIDZDMyA1LjQgMy40IDUgNCA1TDggNSA5IDRaIi8+PC9zdmc+)
+    no-repeat;
+  background-size: contain;
+  vertical-align: text-bottom;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 976px) {
+  .projects {
+    @apply py-16 w-90_100 mx-auto;
+  }
+}

@@ -1,66 +1,64 @@
-.contact{
-    @apply py-20 w-80_100 mx-auto;
-    @apply sm:py-16 w-90_100 mx-auto;
-    color:#ababab;
+.contact {
+  @apply py-20 w-80_100 mx-auto;
+  @apply sm:py-16 w-90_100 mx-auto;
+  color: #ababab;
 }
-.row{
-    @apply flex justify-around flex-wrap;
-}
-
-.contactForm{
-    @apply basis-full sm:basis-45_100 lg:basis-55_100;
-    @apply mt-8;
+.row {
+  @apply flex justify-around flex-wrap;
 }
 
-.contactDetails{
-    @apply basis-full sm:basis-30_100 lg:basis-40_100;
-
-    h1{
-        @apply text-2xl md:text-3xl lg:text-4xl uppercase mb-5;
-        @apply text-heading-color;
-    }
-
-    p{
-        @apply text-sm md:text-base text-gray-700;
-        @apply md:mr-3 mb-5;
-        @apply leading-7;
-    }
+.contactForm {
+  @apply basis-full sm:basis-45_100 lg:basis-55_100;
+  @apply mt-8;
 }
 
- 
+.contactDetails {
+  @apply basis-full sm:basis-30_100 lg:basis-40_100;
 
-.btn{
-    @apply  rounded;
-    @apply bg-btn-color text-light-text;
-    @apply py-2 px-6;
-    @apply hover:bg-[#46319e];
+  h1 {
+    @apply text-2xl md:text-3xl lg:text-4xl uppercase mb-5;
+    @apply text-heading-color;
+  }
+
+  p {
+    @apply text-sm md:text-base text-gray-700;
+    @apply md:mr-3 mb-5;
+    @apply leading-7;
+  }
 }
 
-.contactForm form{
-
-    input::placeholder, textarea::placeholder{
-        @apply text-sm py-1;
-    }
-
-    input, textarea{
-        @apply w-full border-0 outline-none;
-        @apply border-gray-800 py-2 px-3 my-4;
-        @apply text-lg sm:text-sm md:text-lg border-2 rounded-sm;
-        color:#fff;
-        @apply bg-[rgb(38,38,38)];
-
-    }
-
-    input:focus, textarea:focus{
-        @apply border-2 border-gray-400;
-    }
-
+.btn {
+  @apply rounded;
+  @apply bg-btn-color text-light-text;
+  @apply py-2 px-6;
+  @apply hover:bg-[#46319e];
 }
 
-.submitBtn{
-    @apply w-full mx-auto rounded-2xl;
+.contactForm form {
+  input::placeholder,
+  textarea::placeholder {
+    @apply text-sm py-1;
+  }
+
+  input,
+  textarea {
+    @apply w-full border-0 outline-none;
+    @apply border-gray-800 py-2 px-3 my-4;
+    @apply text-lg sm:text-sm md:text-lg border-2 rounded-sm;
+    color: #fff;
+    @apply bg-[rgb(38,38,38)];
+  }
+
+  input:focus,
+  textarea:focus {
+    @apply border-2 border-gray-400;
+  }
 }
 
-.message{
-    @apply text-xs mt-2 text-gray-700;
+.submitBtn {
+  @apply w-full mx-auto rounded-2xl;
+}
+
+.message {
+  @apply text-xs mt-2 text-gray-700;
 }
