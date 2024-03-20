@@ -32,3 +32,51 @@ body {
   @apply bg-slate-200;
   @apply text-gray-900;
 }
+
+/* Poppins-Black */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Poppins-Black.ttf");
+}
+
+/* Poppins-medium */
+@font-face {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/Poppins-Medium.ttf");
+}
+
+/* Poppins-medium */
+@font-face {
+  font-family: "Poppins Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Poppins-Black.ttf");
+}
+
+/* Poppins-medium */
+@font-face {
+  font-family: "Poppins Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+}
+
+/* Poppins-medium */
+@font-face {
+  font-family: "Poppins Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Poppins-Light.ttf");
+}
+
+/* Poppins-medium */
+@font-face {
+  font-family: "Poppins Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Poppins-Thin.ttf");
+}
