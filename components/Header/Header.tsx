@@ -54,7 +54,7 @@ const Navbar = () => {
               Resume
             </a>
             <Link
-              href="mailto:1rn19is109priyashaparnavi@gmail.com"
+              href="mailto:priyashaparnavi299@gmail.com"
               target="_blank"
               className={`${styles.btn}`}
             >

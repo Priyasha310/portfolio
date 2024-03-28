@@ -54,7 +54,7 @@ const Contact = () => {
             happy to connect with you!
           </p>
           <p className="w-95_100 overflow-hidden overflow-ellipsis hover:overflow-visible whitespace-pre-wrap">
-            1rn19is109.priyashaparnavi@gmail.com
+            priyashaparnavi299@gmail.com
           </p>
 
           <a
