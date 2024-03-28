@@ -53,18 +53,21 @@ const About = () => {
                   <li>CSS3</li>
                   <li>Javascript</li>
                   <li>Bootstrap</li>
+                  <li>Tailwind CSS</li>
                 </ul>
                 <ul>
+                  <li>Redux Toolkit</li>
                   <li>Nextjs</li>
-                  <li>Tailwind CSS</li>
                   <li>Reactjs</li>
-                  <li>Figma</li>
+                  <li>Material UI</li>
+                  <li>Clay UI</li>
                 </ul>
                 <ul>
                   <li>Nodejs</li>
                   <li>Nestjs</li>
                   <li>Expressjs</li>
                   <li>MongoDB</li>
+                  <li>Figma</li>
                 </ul>
               </div>
             </div>
