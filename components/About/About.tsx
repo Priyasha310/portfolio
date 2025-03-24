@@ -33,9 +33,9 @@ const About = () => {
               >
                 Skills
               </p>
-              {/* <p className={`${styles.tabLinks} ${activeTab === 'experience' ? styles.active : ''}`}  
+              <p className={`${styles.tabLinks} ${activeTab === 'experience' ? styles.active : ''}`}  
                     onClick={()=> openTab('experience')}
-                    >Experience</p> */}
+                    >Experience</p>
               <p
                 className={`${styles.tabLinks} ${activeTab === "education" ? styles.active : ""}`}
                 onClick={() => openTab("education")}
@@ -57,7 +57,7 @@ const About = () => {
                 </ul>
                 <ul>
                   <li>Redux Toolkit</li>
-                  <li>Nextjs</li>
+                  <li>Dialogflow</li>
                   <li>Reactjs</li>
                   <li>Material UI</li>
                   <li>Clay UI</li>
@@ -79,6 +79,13 @@ const About = () => {
                 <h6 className="">
                   Associate Software Engineer{" "}
                   <span>[March 2023 - June 2023]</span>
+                </h6>
+                <p> HashedIn by Deloitte</p>
+              </div>
+              <div>
+                <h6 className="mt-4">
+                  Software Engineer - 1{" "}
+                  <span>[November 2023 - Present]</span>
                 </h6>
                 <p> HashedIn by Deloitte</p>
               </div>

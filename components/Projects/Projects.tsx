@@ -52,15 +52,15 @@ const Projects = () => {
                 path="https://github.com/Priyasha310/Whispp-chat-App"
               />
               <ProjectCard
-                heading="Heading of Project3"
-                description="Description of project3: Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                path=""
+                heading="Portfolio"
+                description="You can go and checkout my portfolio code here. :)"
+                path="https://github.com/Priyasha310/portfolio"
               />
-              <ProjectCard
-                heading="Heading of Project4"
-                description="Description of project4: Lorem ipsum dolor sit amet consectetur adipisicing elit."
+              {/* <ProjectCard
+                heading="Project in Progress"
+                description="Stay in tune for more such projects."
                 path=""
-              />
+              /> */}
             </Carousel>
           </div>
         </div>
