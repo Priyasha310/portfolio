@@ -33,9 +33,12 @@ const About = () => {
               >
                 Skills
               </p>
-              <p className={`${styles.tabLinks} ${activeTab === 'experience' ? styles.active : ''}`}  
-                    onClick={()=> openTab('experience')}
-                    >Experience</p>
+              <p
+                className={`${styles.tabLinks} ${activeTab === "experience" ? styles.active : ""}`}
+                onClick={() => openTab("experience")}
+              >
+                Experience
+              </p>
               <p
                 className={`${styles.tabLinks} ${activeTab === "education" ? styles.active : ""}`}
                 onClick={() => openTab("education")}
@@ -77,15 +80,14 @@ const About = () => {
             >
               <div>
                 <h6 className="">
-                  Associate Software Engineer{" "}
-                  <span>[March 2023 - June 2023]</span>
+                  Software Engineer - 1 <span>[November 2023 - Present]</span>
                 </h6>
                 <p> HashedIn by Deloitte</p>
               </div>
               <div>
                 <h6 className="mt-4">
-                  Software Engineer - 1{" "}
-                  <span>[November 2023 - Present]</span>
+                  Associate Software Engineer{" "}
+                  <span>[March 2023 - June 2023]</span>
                 </h6>
                 <p> HashedIn by Deloitte</p>
               </div>
