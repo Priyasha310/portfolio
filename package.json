@@ -9,6 +9,9 @@
     "lint": "next lint",
     "format": "prettier --write \"**/*.{ts,tsx,css,scss}\""
   },
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "@types/node": "20.4.5",
     "@types/react": "18.2.16",
