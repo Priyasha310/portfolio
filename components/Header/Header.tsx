@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./header.module.scss";
 import Image from "next/image";
-import logo from "@/assets/images/pri.jpg";
+import logo from "@/assets/images/Priyasha_Parnavi_profile.jpg";
 import Link from "next/link";
 import Typed from "typed.js";
 
