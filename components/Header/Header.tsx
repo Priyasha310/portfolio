@@ -47,7 +47,7 @@ const Navbar = () => {
             <br />
             <a
               href={`/PRIYASHA_PARNAVI-resume.pdf`}
-              download
+              target="_blank"
               className={`${styles.btn}`}
             >
               {" "}
