@@ -4,7 +4,7 @@ import styles from "./contact.module.scss";
 
 const Contact = () => {
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbxE6qO91s_czXLrq1pNyTjhsAzjzkrAHbZp3sbIbUuBBbSxc_3bxr6ec5JqTnERVh2oYw/exec";
+    "https://script.google.com/macros/s/AKfycbxa9bIOGcmCwzP4yd2SZhRZVEAF1Hj9ILGPkxvVcIYLjOfuK4uzU_jlZVsDS_UcdnQ/exec";
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
