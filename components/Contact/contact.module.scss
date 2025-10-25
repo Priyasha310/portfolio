@@ -34,6 +34,11 @@
   @apply hover:bg-[#46319e];
 }
 
+.imageBtn{
+  @apply flex items-center gap-2;
+  @apply max-w-max;
+}
+
 .contactForm form {
   input::placeholder,
   textarea::placeholder {
@@ -47,6 +52,7 @@
     @apply text-lg sm:text-sm md:text-lg border-2 rounded-sm;
     color: #fff;
     @apply bg-[rgb(38,38,38)];
+    @apply rounded;
   }
 
   input:focus,
@@ -56,7 +62,7 @@
 }
 
 .submitBtn {
-  @apply w-full mx-auto rounded-2xl;
+  @apply w-full mx-auto rounded;
 }
 
 .message {

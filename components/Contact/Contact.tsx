@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import styles from "./contact.module.scss";
+import Image from "next/image";
+import download from "../../assets/images/download.png";
 
 const Contact = () => {
   const scriptURL =
@@ -60,10 +62,10 @@ const Contact = () => {
           <a
             href={`/PRIYASHA_PARNAVI-resume.pdf`}
             download
-            className={styles.btn}
+            className={`${styles.btn} ${styles.imageBtn}`}
           >
-            {" "}
-            Resume
+            <Image src={download} alt='download' className="w-6 h-6"></Image>
+            Download Resume
           </a>
         </div>
         <div className={styles.contactForm}>
