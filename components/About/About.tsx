@@ -21,10 +21,7 @@ const About = () => {
           <div className={styles.aboutCol2}>
             <h1>About Me</h1>
             <p>
-              Passionate web developer with a focus on designing aesthetically
-              appealing and user-friendly websites. I&apos;m skilled at using
-              front-end technologies to bring ideas to life with functional and
-              responsive designs through clean and efficient code.
+              Software Engineer with 2+ years of experience in React, TypeScript, and scalable UI development, specializing in reusable components, performance optimization, WCAG accessibility, and end-to-end SDLC delivery.
             </p>
             <div className={styles.tabTitles}>
               <p
