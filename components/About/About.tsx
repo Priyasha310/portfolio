@@ -77,7 +77,11 @@ const About = () => {
             >
               <div>
                 <h6 className="">
-                  Software Engineer - 1 <span>[November 2023 - Present]</span>
+                  Software Engineer - 2 <span>[Decmber 2025 - Present]</span>
+                </h6>
+                <p> HashedIn by Deloitte</p>
+                <h6 className="mt-4">
+                  Software Engineer - 1 <span>[November 2023 - November 2025]</span>
                 </h6>
                 <p> HashedIn by Deloitte</p>
               </div>
