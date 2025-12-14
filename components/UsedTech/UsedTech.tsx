@@ -5,6 +5,7 @@ import next from "@/assets/images/next.png";
 import react from "@/assets/images/react.png";
 import vercel from "@/assets/images/vercel.png";
 import tailwind from "@/assets/images/tailwind.png";
+import { USED_TECH_TEXT } from "./usedTech.constants";
 
 const UsedTech = () => {
   return (
@@ -12,7 +13,7 @@ const UsedTech = () => {
       <hr className="border border-gray-300 mt-4"></hr>
       <div id="technology" className={`${styles.techs} `}>
         <div className={styles.techsContainer}>
-          <div className={styles.title}>Technologies used for portfolio</div>
+          <div className={styles.title}>{USED_TECH_TEXT.title}</div>
           <div className={styles.techsList}>
             <Image src={react} alt="" />
             <Image src={next} alt="" />

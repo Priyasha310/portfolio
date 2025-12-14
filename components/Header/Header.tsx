@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo from "@/assets/images/Priyasha_Parnavi_profile.png";
 import Link from "next/link";
 import Typed from "typed.js";
+import { HEADER_TEXT } from "./header.constants";
 
 const Navbar = () => {
   const typedRef = useRef<HTMLSpanElement>(null);
@@ -12,11 +13,10 @@ const Navbar = () => {
   useEffect(() => {
     if (typedRef.current) {
       const options = {
-        strings: ["a Web Designer", "a Web Developer", "a Learner"],
+        strings: HEADER_TEXT.typedStrings,
         typeSpeed: 70,
         loop: true,
       };
-
       const typed = new Typed(typedRef.current, options);
 
       return () => {
@@ -34,32 +34,27 @@ const Navbar = () => {
           </div>
 
           <div className={styles.headerText}>
-            <p>Hello! I&apos;m </p>
+            <p>{HEADER_TEXT.hello}</p>
             <h1>
-              Priyasha Parnavi,
+              {HEADER_TEXT.name}
               <br />
               <span ref={typedRef}></span>
             </h1>
-            <p>
-              I&apos;m an enthusiastic and passionate web developer and very
-              inquisitive person. Ready to learn new technologies.
-            </p>
+            <p>{HEADER_TEXT.description}</p>
             <br />
             <a
-              href={`/PRIYASHA_PARNAVI-resume.pdf`}
+              href={HEADER_TEXT.resumeLink}
               target="_blank"
               className={`${styles.btn}`}
             >
-              {" "}
-              Resume
+              {HEADER_TEXT.resumeBtn}
             </a>
             <Link
-              href="mailto:priyashaparnavi299@gmail.com"
+              href={HEADER_TEXT.mail}
               target="_blank"
               className={`${styles.btn}`}
             >
-              {" "}
-              Mail me{" "}
+              {HEADER_TEXT.mailBtn}
             </Link>
           </div>
 
@@ -68,7 +63,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <hr className="border border-gray-300 mt-4"></hr>
+      <hr className={HEADER_TEXT.hrClass}></hr>
     </>
   );
 };

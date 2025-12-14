@@ -3,10 +3,10 @@ import React, { useEffect } from "react";
 import styles from "./contact.module.scss";
 import Image from "next/image";
 import download from "../../assets/images/download.png";
+import { scriptURL, CONTACT_TEXT } from "./contact.constants";
 
 const Contact = () => {
-  const scriptURL =
-    "https://script.google.com/macros/s/AKfycbxa9bIOGcmCwzP4yd2SZhRZVEAF1Hj9ILGPkxvVcIYLjOfuK4uzU_jlZVsDS_UcdnQ/exec";
+  // scriptURL is now imported from contact.constants.ts
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -20,7 +20,7 @@ const Contact = () => {
       });
       console.log("Success!", response);
       if (msg) {
-        msg.innerHTML = "Response submitted. Will get to you soon!";
+        msg.innerHTML = CONTACT_TEXT.form.response;
         setTimeout(() => {
           msg.innerHTML = "";
           form.reset();
@@ -48,46 +48,40 @@ const Contact = () => {
     <div id="contact" className={styles.contact}>
       <div className={styles.row}>
         <div className={styles.contactDetails}>
-          <h1>Contact Me</h1>
-
-          <p>
-            Let&apos;s build something incredible together! Reach out to me for
-            software development opportunities and collaborations. Would be
-            happy to connect with you!
-          </p>
+          <h1>{CONTACT_TEXT.heading}</h1>
+          <p>{CONTACT_TEXT.description}</p>
           <p className="w-95_100 overflow-hidden overflow-ellipsis hover:overflow-visible whitespace-pre-wrap">
-            priyashaparnavi299@gmail.com
+            {CONTACT_TEXT.email}
           </p>
-
           <a
-            href={`/PRIYASHA_PARNAVI-resume.pdf`}
+            href={CONTACT_TEXT.resumeLink}
             download
             className={`${styles.btn} ${styles.imageBtn}`}
           >
             <Image src={download} alt='download' className="w-6 h-6"></Image>
-            Download Resume
+            {CONTACT_TEXT.resumeBtn}
           </a>
         </div>
         <div className={styles.contactForm}>
           <form name="submit-to-google-sheet">
-            <input type="text" name="Name" placeholder="Your Name *" required />
+            <input type="text" name="Name" placeholder={CONTACT_TEXT.form.name} required />
             <input
               type="email"
               name="Email"
-              placeholder="youremail@xyz.com *"
+              placeholder={CONTACT_TEXT.form.email}
               required
             />
             <input
               type="subject"
               name="Subject"
-              placeholder="Contact Subject"
+              placeholder={CONTACT_TEXT.form.subject}
             />
-            <textarea name="Message" placeholder="Your Message *" required />
+            <textarea name="Message" placeholder={CONTACT_TEXT.form.message} required />
             <button
               type="submit"
               className={`${styles.btn} ${styles.submitBtn}`}
             >
-              Submit
+              {CONTACT_TEXT.form.submit}
             </button>
           </form>
           <span id="message" className={styles.message}></span>
