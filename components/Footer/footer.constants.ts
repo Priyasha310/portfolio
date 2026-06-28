@@ -3,5 +3,5 @@ export const FOOTER_TEXT = {
   linkedin: "https://www.linkedin.com/in/priyasha-parnavi-915b691b4/",
   github: "https://github.com/Priyasha310",
   up: "#home",
-  copyright: "© Priyasha Parnavi 2025 | All rights reserved",
+  copyright: "© Priyasha Parnavi | All rights reserved",
 };

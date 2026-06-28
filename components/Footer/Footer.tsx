@@ -9,32 +9,28 @@ import up from "@/assets/images/up.svg";
 import { FOOTER_TEXT } from "./footer.constants";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div id="footer">
+    <footer id="footer">
       <div className={styles.footerContainer}>
         <div className={styles.socialIcons}>
-          <Link
-            href={FOOTER_TEXT.mail}
-            target="_blank"
-          >
-            <Image src={mail} alt=""></Image>
+          <Link href={FOOTER_TEXT.mail} target="_blank" aria-label="Email">
+            <Image src={mail} alt="" />
           </Link>
-          <Link
-            href={FOOTER_TEXT.linkedin}
-            target="_blank"
-          >
-            <Image src={linkedin} alt=""></Image>
+          <Link href={FOOTER_TEXT.linkedin} target="_blank" aria-label="LinkedIn">
+            <Image src={linkedin} alt="" />
           </Link>
-          <Link href={FOOTER_TEXT.github} target="_blank">
-            <Image src={git} alt=""></Image>
+          <Link href={FOOTER_TEXT.github} target="_blank" aria-label="GitHub">
+            <Image src={git} alt="" />
           </Link>
-          <Link className="absolute right-6" href={FOOTER_TEXT.up}>
-            <Image className="h-60_100" src={up} alt=""></Image>
+          <Link className="absolute right-6" href={FOOTER_TEXT.up} aria-label="Back to top">
+            <Image className="h-60_100" src={up} alt="" />
           </Link>
         </div>
-        <p> {FOOTER_TEXT.copyright} </p>
+        <p>{FOOTER_TEXT.copyright} {currentYear}</p>
       </div>
-    </div>
+    </footer>
   );
 };
 
