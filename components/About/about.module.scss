@@ -44,8 +44,8 @@
 .tabLinks {
   @apply mr-8 md:mr-12;
   @apply text-lg font-semibold cursor-pointer;
-  @apply relative bg-transparent border-0 p-0 text-left;
-  color: inherit;
+    @apply relative bg-transparent border-0 p-0 text-left;
+    @apply text-heading-color;
   font: inherit;
 }
 
