@@ -1,8 +1,9 @@
 export const HEADER_TEXT = {
-  typedStrings: ["a Web Designer", "a Web Developer", "a Learner"],
+  typedStrings: ["Frontend Engineer", "React Developer", "Frontend Lead"],
   hello: "Hello! I'm ",
   name: "Priyasha Parnavi,",
-  description: "I'm an enthusiastic and passionate web developer and very inquisitive person. Ready to learn new technologies.",
+  description:
+    "Frontend Engineer — 2.5+ years building enterprise React applications with TypeScript and Redux Toolkit; experienced leading frontend teams and shipping AI-enabled platforms.",
   resumeLink: "/PRIYASHA_PARNAVI-resume.pdf",
   resumeBtn: "Resume",
   mail: "mailto:priyashaparnavi299@gmail.com",

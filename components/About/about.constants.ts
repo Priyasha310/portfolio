@@ -1,7 +1,7 @@
 export const ABOUT_TEXT = {
   heading: "About Me",
   description:
-    "Software Engineer with 2+ years of experience in React, TypeScript, and scalable UI development, specializing in reusable components, performance optimization, WCAG accessibility, and end-to-end SDLC delivery.",
+    "Software Engineer with 2.5+ years building enterprise-scale web applications using React 18, TypeScript, and Redux Toolkit. I design scalable, accessible UIs, optimize performance, have experience mentoring FE engineers, and integrate AI-driven features to deliver measurable product impact.",
 };
 export const tabs = [
   { id: "skills", label: "Skills" },
@@ -10,15 +10,20 @@ export const tabs = [
 ];
 
 export const skillsColumns: string[][] = [
-  ["HTML5", "CSS3", "Javascript", "Bootstrap", "Tailwind CSS"],
-  ["Redux Toolkit", "Dialogflow", "Reactjs", "Material UI", "Clay UI"],
-  ["Nodejs", "Nestjs", "Expressjs", "MongoDB", "Figma"],
+  ["React.js", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit"],
+  ["Tailwind CSS", "Bootstrap", "SCSS", "Material UI", "Figma"],
+  ["Node.js", "NestJS", "Express.js", "MongoDB", "Dialogflow"],
 ];
 
 export const experiences = [
   {
+    title: "Software Engineer - 2",
+    period: "[December 2025 - Present]",
+    company: "HashedIn by Deloitte",
+  },
+  {
     title: "Software Engineer - 1",
-    period: "[November 2023 - Present]",
+    period: "[November 2023 - November 2025]",
     company: "HashedIn by Deloitte",
   },
   {
