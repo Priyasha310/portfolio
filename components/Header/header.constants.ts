@@ -3,7 +3,7 @@ export const HEADER_TEXT = {
   hello: "Hello! I'm ",
   name: "Priyasha Parnavi,",
   description:
-    "Frontend Engineer — 2.5+ years building enterprise React applications with TypeScript and Redux Toolkit; experienced leading frontend teams and shipping AI-enabled platforms.",
+    "Frontend Engineer focused on React, TypeScript, and Redux Toolkit — building polished enterprise UI experiences and AI-enabled product flows.",
   resumeLink: "/PRIYASHA_PARNAVI-resume.pdf",
   resumeBtn: "Resume",
   mail: "mailto:priyashaparnavi299@gmail.com",

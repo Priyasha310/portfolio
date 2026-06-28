@@ -1,7 +1,7 @@
 export const ABOUT_TEXT = {
   heading: "About Me",
   description:
-    "Software Engineer with 2.5+ years building enterprise-scale web applications using React 18, TypeScript, and Redux Toolkit. I design scalable, accessible UIs, optimize performance, have experience mentoring FE engineers, and integrate AI-driven features to deliver measurable product impact.",
+    "Software Engineer with 2.5+ years of experience building enterprise-scale products in React 18 and TypeScript. I create scalable, accessible interfaces, optimize frontend performance, mentor front-end engineers, and deliver AI-enhanced solutions that improve user engagement and business outcomes.",
 };
 export const tabs = [
   { id: "skills", label: "Skills" },
